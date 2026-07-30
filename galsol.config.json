@@ -1,9 +1,182 @@
 {
-  "name": "I need a Good 3D PRIME WEBSITE",
-  "slug": "i-need-a-good-3d-prime-website-0mui0",
-  "template": "blank",
-  "pages": [
-    "index"
-  ],
-  "version": 1
+  "generator": "ui-library",
+  "version": 1,
+  "style": "glass",
+  "palette": "sunset-fest",
+  "fonts": "syne+inter",
+  "spec": {
+    "style": "glass",
+    "palette": "sunset-fest",
+    "fonts": "syne+inter",
+    "event": {
+      "name": "A.Culturals'26"
+    },
+    "pages": [
+      {
+        "name": "index",
+        "title": "Home",
+        "sections": [
+          {
+            "type": "hero",
+            "scene": "cinematic",
+            "background": {
+              "video": "vibrant college cultural festival crowd cheering in front of a concert stage with flashing colorful lights",
+              "grade": "brand",
+              "scrim": "heavy"
+            },
+            "effects": [
+              "data-sparkles",
+              "txt-gradient",
+              "btn-shine"
+            ],
+            "content": {
+              "badge": "LOYOLA COLLEGE • DEC 25, 2026",
+              "headline": "A.Culturals'26",
+              "sub": "Chennai's ultimate inter-collegiate cultural warzone returns. Bring the energy, claim the crown.",
+              "ctaText": "Secure Your Pass",
+              "ctaHref": "pages/register.html",
+              "image": "https://images.pexels.com/photos/13230484/pexels-photo-13230484.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+            }
+          },
+          {
+            "type": "about",
+            "scene": "reveal",
+            "background": {
+              "video": "ink-flow",
+              "grade": "warm",
+              "scrim": "medium"
+            },
+            "content": {
+              "title": "The Legacy of Loyola",
+              "body": "For decades, Loyola College has hosted the ultimate arena where raw student talent meets explosive performance energy. A.Culturals'26 brings together over 50 top institutions from across India to battle in music, dance, visual arts, and design. Prepare for an unforgettable day of creative warfare under the Chennai sky."
+            }
+          },
+          {
+            "type": "schedule",
+            "scene": "still",
+            "effects": [
+              "data-glow"
+            ],
+            "content": {
+              "title": "The Mainstage Schedule",
+              "items": [
+                {
+                  "time": "09:00 AM",
+                  "title": "Battle of the Bands",
+                  "desc": "The heaviest live rock, fusion, and acoustic sets from Chennai's premier student musicians fighting for the grand prize."
+                },
+                {
+                  "time": "12:00 PM",
+                  "title": "Choreo Nite (Eastern & Western)",
+                  "desc": "High-velocity synchronized routines and stunning street dances that light up the historic Loyola open-air theater."
+                },
+                {
+                  "time": "03:00 PM",
+                  "title": "Pro-Show & Star Interactive",
+                  "desc": "Exclusive live performances and Q&A sessions with the country's most celebrated cultural icons and cinematic stars."
+                },
+                {
+                  "time": "06:00 PM",
+                  "title": "The DJ War & Mega Finale",
+                  "desc": "An explosive electronic dance music performance to crown the overall champion college of A.Culturals'26."
+                }
+              ]
+            }
+          },
+          {
+            "type": "speakers",
+            "scene": "still",
+            "content": {
+              "title": "Star Jury & Special Guests",
+              "items": [
+                {
+                  "name": "Anirudh Ravichander",
+                  "role": "Guest of Honor & Chief Music Judge",
+                  "photo": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/DP2qDilD8aN/0/image.jpg"
+                },
+                {
+                  "name": "Gautham Vasudev Menon",
+                  "role": "Grand Finale Variety Show Judge",
+                  "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg"
+                },
+                {
+                  "name": "Sandy Master",
+                  "role": "Choreography Battle Lead Arbiter",
+                  "photo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sandy_Master_in_2019.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "type": "countdown",
+            "content": {
+              "title": "The Countdown to the Arena",
+              "date": "2026-12-25T08:00:00"
+            }
+          },
+          {
+            "type": "gallery",
+            "scene": "parallax",
+            "content": {
+              "title": "Relive the Glory",
+              "images": [
+                "https://images.pexels.com/photos/5193526/pexels-photo-5193526.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/30215324/pexels-photo-30215324.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+              ]
+            }
+          },
+          {
+            "type": "cta",
+            "scene": "still",
+            "background": {
+              "video": "stage-lights",
+              "grade": "brand",
+              "scrim": "heavy"
+            },
+            "effects": [
+              "btn-borderglow"
+            ],
+            "content": {
+              "title": "Will You Defend Your College Pride?",
+              "sub": "Registration is free but slots are strictly capped per event category. Secure your contingent's place today.",
+              "ctaText": "Register Now",
+              "ctaHref": "pages/register.html"
+            }
+          }
+        ]
+      },
+      {
+        "name": "register",
+        "title": "Register",
+        "sections": [
+          {
+            "type": "hero",
+            "scene": "still",
+            "effects": [
+              "fx-aurora",
+              "txt-shiny"
+            ],
+            "content": {
+              "badge": "A.CULTURALS'26",
+              "headline": "Join The Battle",
+              "sub": "Register your collegiate squad or enter as an individual performer. Prove your mettle on Chennai's biggest stage.",
+              "ctaText": "Main Page",
+              "ctaHref": "../index.html",
+              "image": "https://images.pexels.com/photos/1179581/pexels-photo-1179581.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+            }
+          },
+          {
+            "type": "form",
+            "content": {
+              "title": "Contingent Registration Desk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
