@@ -1,150 +1,594 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>A.Culturals&#39;26</title>
-<meta name="description" content="A.Culturals&#39;26 — details, schedule and registration.">
-<meta name="theme-color" content="#ff6a3d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ff6a3d%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23c026d3%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+:root {
+  --bg: #09030b;
+  --fg: #f5f2f7;
+  --accent: #ff6a3d;
+  --accent-rgb: 255, 106, 61;
+  --accent-alt: #c026d3;
+  --border: rgba(255, 255, 255, 0.08);
+  --muted: #a69cb0;
+  --surface: rgba(18, 12, 22, 0.65);
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.Culturals&#39;26">
-<meta property="og:title" content="A.Culturals&#39;26">
-<meta property="og:description" content="A.Culturals&#39;26 — details, schedule and registration.">
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A.Culturals&#39;26">
-<meta name="twitter:description" content="A.Culturals&#39;26 — details, schedule and registration.">
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="nav" data-nav>
-  <a class="nav-brand" href="index.html">A.Culturals&#39;26</a>
-  <nav class="nav-links"><a href="index.html">Home</a><a href="pages/register.html">Register</a></nav>
-  <button class="nav-burger" aria-label="Menu" data-burger><span></span><span></span><span></span></button>
-</header>
-<main>
-<div class="scene-pin" style="--pin:1.5">
-<section class="hero fx-meteors sc-hold sc-zoom sc-depth" data-hero data-media data-sparkles data-scene data-pin>
-<div class="ms-media ms-g-brand" data-ms-video>
-    <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-03.webp" alt="" aria-hidden="true" decoding="async">
-    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-      data-mp4="https://motion.galsol.in/v1/stage-lights-03.mp4"></video>
-  </div>
-  <div class="ms-scrim ms-scrim-heavy"></div>
-  <div class="hero-bg" data-bg></div>
-  <div class="hero-inner">
-    <span class="hero-badge reveal">LOYOLA COLLEGE • DEC 25, 2026</span>
-    <h1 class="hero-title reveal txt-gradient">A.Culturals&#39;26</h1>
-    <p class="hero-sub reveal">Chennai&#39;s ultimate inter-collegiate cultural warzone returns. Bring the energy, claim the crown.</p>
-    <a class="btn btn-lg reveal btn-shine" href="pages/register.html">Secure Your Pass</a>
-  </div>
-</section>
-</div>
-<section class="section fx-noise sc-wipe sc-rise" id="about" data-media data-scene>
-<div class="ms-media ms-g-warm" data-ms-video>
-    <img class="ms-poster" src="https://motion.galsol.in/v1/ink-flow-02.webp" alt="" aria-hidden="true" decoding="async">
-    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-      data-mp4="https://motion.galsol.in/v1/ink-flow-02.mp4"></video>
-  </div>
-  <div class="ms-scrim ms-scrim-medium"></div>
-  <div class="section-inner">
-    <div class="about-copy">
-      <h2 class="section-title reveal">The Legacy of Loyola</h2>
-      <p class="section-lead reveal">For decades, Loyola College has hosted the ultimate arena where raw student talent meets explosive performance energy. A.Culturals&#39;26 brings together over 50 top institutions from across India to battle in music, dance, visual arts, and design. Prepare for an unforgettable day of creative warfare under the Chennai sky.</p>
-    </div>
-    
-  </div>
-</section>
-<section class="section" id="schedule" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">The Mainstage Schedule</h2>
-    <div class="schedule">
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">09:00 AM</div>
-      <div class="sched-body"><div class="sched-title">Battle of the Bands</div><div class="sched-desc">The heaviest live rock, fusion, and acoustic sets from Chennai&#39;s premier student musicians fighting for the grand prize.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">12:00 PM</div>
-      <div class="sched-body"><div class="sched-title">Choreo Nite (Eastern &amp; Western)</div><div class="sched-desc">High-velocity synchronized routines and stunning street dances that light up the historic Loyola open-air theater.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">03:00 PM</div>
-      <div class="sched-body"><div class="sched-title">Pro-Show &amp; Star Interactive</div><div class="sched-desc">Exclusive live performances and Q&amp;A sessions with the country&#39;s most celebrated cultural icons and cinematic stars.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">06:00 PM</div>
-      <div class="sched-body"><div class="sched-title">The DJ War &amp; Mega Finale</div><div class="sched-desc">An explosive electronic dance music performance to crown the overall champion college of A.Culturals&#39;26.</div></div>
-    </div></div>
-  </div>
-</section>
-<section class="section" id="speakers" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">Star Jury &amp; Special Guests</h2>
-    <div class="grid grid-cards">
-    <article class="card speaker reveal">
-      <div class="speaker-photo" style="background-image:url('https://lookaside.fbsbx.com/lookaside/crawler/instagram/DP2qDilD8aN/0/image.jpg')"></div>
-      <div class="speaker-name">Anirudh Ravichander</div>
-      <div class="speaker-role">Guest of Honor &amp; Chief Music Judge</div>
-    </article>
-    <article class="card speaker reveal">
-      <div class="speaker-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg')"></div>
-      <div class="speaker-name">Gautham Vasudev Menon</div>
-      <div class="speaker-role">Grand Finale Variety Show Judge</div>
-    </article>
-    <article class="card speaker reveal">
-      <div class="speaker-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/9/95/Sandy_Master_in_2019.jpg')"></div>
-      <div class="speaker-name">Sandy Master</div>
-      <div class="speaker-role">Choreography Battle Lead Arbiter</div>
-    </article></div>
-  </div>
-</section>
-<section class="section countdown-section" id="countdown">
-  <div class="section-inner">
-    <h2 class="section-title reveal">The Countdown to the Arena</h2>
-    <div class="countdown reveal" data-countdown="2026-12-25T08:00:00">
-      <div class="cd-unit"><span data-cd="days">00</span><small>Days</small></div>
-      <div class="cd-unit"><span data-cd="hours">00</span><small>Hours</small></div>
-      <div class="cd-unit"><span data-cd="mins">00</span><small>Minutes</small></div>
-      <div class="cd-unit"><span data-cd="secs">00</span><small>Seconds</small></div>
-    </div>
-  </div>
-</section>
-<section class="section sc-parallax sc-rise" id="gallery" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">Relive the Glory</h2>
-    <div class="gallery"><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/5193526/pexels-photo-5193526.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/30215324/pexels-photo-30215324.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div></div>
-  </div>
-</section>
-<section class="section cta fx-meteors" id="register" data-media data-scene>
-<div class="ms-media ms-g-brand" data-ms-video>
-    <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-01.webp" alt="" aria-hidden="true" decoding="async">
-    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-      data-mp4="https://motion.galsol.in/v1/stage-lights-01.mp4"></video>
-  </div>
-  <div class="ms-scrim ms-scrim-heavy"></div>
-  <div class="section-inner cta-inner reveal">
-    <h2 class="cta-title">Will You Defend Your College Pride?</h2>
-    <p class="cta-sub">Registration is free but slots are strictly capped per event category. Secure your contingent&#39;s place today.</p>
-    <a class="btn btn-lg btn-borderglow" href="pages/register.html">Register Now</a>
-  </div>
-</section>
-</main>
-<footer class="footer reveal">
-  <div class="footer-inner">
-    <div class="footer-brand">A.Culturals&#39;26</div>
-    <nav class="footer-links"><a href="index.html">Home</a><a href="pages/register.html">Register</a></nav>
-    <div class="footer-copy">© 2026 A.Culturals&#39;26. Made with GalSol.</div>
-  </div>
-</footer>
+/* Header/Nav */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(9, 3, 11, 0.7);
+  transition: transform 0.3s ease;
+}
+.nav-brand {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(45deg, #fff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: #fff;
+}
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+}
+.nav-burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 
-<script src="script.js"></script>
+/* 3D Grid Zoom-out Scene Base */
+.scene-pin {
+  position: relative;
+  width: 100%;
+}
+.grid-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.grid-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300vw;
+  height: 300vh;
+  transform: translate3d(-50%, -50%, 0);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.grid-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+.grid-cell img, .grid-cell video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
 
-</body>
-</html>
+/* Center Stage Cell Hero Setup */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* 3D Glass Card Design */
+.hero-glass-card {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 32px;
+  background: rgba(30, 10, 28, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.65);
+  position: relative;
+  z-index: 2;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.hero-badge-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--accent);
+  animation: live-pulse 1.6s infinite ease-in-out;
+}
+@keyframes live-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.6; }
+  50% { transform: scale(1.25); opacity: 1; }
+}
+.hero-badge {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  color: var(--muted);
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+.hero-tagline span {
+  display: inline-block;
+  min-width: 160px;
+  text-align: left;
+}
+.hero-sub {
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  color: var(--muted);
+  max-width: 52ch;
+  margin: 0 auto 30px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  outline: none;
+}
+.btn-lg {
+  padding: 16px 36px;
+  font-size: 1.05rem;
+}
+.btn-shine {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(255, 106, 61, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
+  transform: rotate(30deg) translate(-100%, -100%);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-shine:hover::after {
+  transform: rotate(30deg) translate(100%, 100%);
+}
+.btn-shine:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px rgba(255, 106, 61, 0.45);
+}
+.btn-borderglow {
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--accent);
+  position: relative;
+}
+.btn-borderglow:hover {
+  background: rgba(255, 106, 61, 0.1);
+  box-shadow: 0 0 20px rgba(255, 106, 61, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Sections & Inner */
+.section {
+  position: relative;
+  padding: 110px 0;
+  width: 100%;
+  overflow: hidden;
+}
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  position: relative;
+  z-index: 2;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+.section-lead {
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 75ch;
+  margin-bottom: 40px;
+}
+
+/* Grid & Cards layout */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+.grid-cards {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  position: relative;
+}
+.card:hover {
+  border-color: rgba(255,106,61,0.3);
+  transform: translateY(-4px);
+}
+
+/* Schedule List */
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sched-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.sched-item:hover {
+  transform: translateX(6px);
+  border-color: rgba(255,106,61,0.25);
+}
+.sched-time {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.sched-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.sched-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Speakers */
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.speaker-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border: 3px solid var(--border);
+}
+.speaker-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.speaker-role {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Countdown */
+.countdown-section {
+  background: radial-gradient(circle at top, rgba(255,106,61,0.06) 0%, transparent 60%);
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+.cd-unit {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+  border-radius: 16px;
+  min-width: 110px;
+  text-align: center;
+}
+.cd-unit span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.cd-unit small {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.gallery-item {
+  height: 240px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 120px 0;
+  border-top: 1px solid var(--border);
+}
+.cta-inner {
+  max-width: 700px;
+}
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+.cta-sub {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  margin-bottom: 34px;
+}
+
+/* Media/Scrim Helpers */
+.ms-media {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0;
+}
+.ms-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.ms-scrim-heavy {
+  background: linear-gradient(180deg, rgba(9, 3, 11, 0.5) 0%, rgba(9, 3, 11, 0.92) 100%);
+}
+.ms-scrim-medium {
+  background: linear-gradient(180deg, rgba(9, 3, 11, 0.3) 0%, rgba(9, 3, 11, 0.8) 100%);
+}
+
+/* Text Gradient & Shine Effects */
+.txt-gradient {
+  background: linear-gradient(135deg, #fff 30%, var(--accent) 70%, var(--accent-alt) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txt-shiny {
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(255, 106, 61, 0.4);
+}
+
+/* Noise Overlay */
+.fx-noise {
+  position: relative;
+}
+.fx-noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 60px 0;
+  background: #060208;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  background: linear-gradient(45deg, #fff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.footer-copy {
+  color: rgba(255,255,255,0.25);
+  font-size: 0.8rem;
+}
+
+/* Mobile responsive fixes */
+@media(max-width: 900px) {
+  .sched-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    width: 100%;
+    background: rgba(9, 3, 11, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    text-align: center;
+  }
+  .nav.open .nav-links {
+    display: flex;
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .nav.open .nav-burger span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .nav.open .nav-burger span:nth-child(2){ opacity:0; }
+  .nav.open .nav-burger span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+  .hero-glass-card {
+    padding: 32px 20px;
+    border-radius: 18px;
+  }
+  .hero-tagline {
+    margin-bottom: 20px;
+  }
+}

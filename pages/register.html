@@ -39,9 +39,37 @@
     <a class="btn btn-lg reveal" href="../index.html">Main Page</a>
   </div>
 </section>
-<section class="section" id="register"><div class="section-inner reveal">
-      <h2 class="section-title">Contingent Registration Desk</h2>
-      <p class="section-lead">Connect a GS Form to this site to collect registrations.</p></div></section>
+<section class="section" id="register">
+  <div class="section-inner reveal" style="text-align:center;">
+    <h2 class="section-title">Contingent Registration Desk</h2>
+    <p class="section-lead">Secure your spot in the Chennai Arena. Fill out the form below to lock in your contingent registration.</p>
+    
+    <iframe src="https://galsol.in/gs-form-view?f=sanskriti-2026-q22ij&embed=1" title="Registration form" data-gs-auto="1" allowtransparency="true" loading="lazy" style="display:block;width:100%;max-width:720px;margin:0 auto;height:760px;border:0;background:transparent"></iframe>
+
+    <script>
+    /* GalSol GS Form auto-height */
+    (function(){
+      if (window.__galsolAutoH) return; window.__galsolAutoH = 1;
+      var GALSOL_ORIGIN = "https://galsol.in";
+      window.addEventListener('message', function (e) {
+        if (e.origin !== GALSOL_ORIGIN) return;
+        var d = e.data;
+        if (!d || d.source !== 'gsform' || typeof d.height !== 'number') return;
+        var frames = document.querySelectorAll('iframe[data-gs-auto="1"]');
+        for (var i = 0; i < frames.length; i++) {
+          if (frames[i].contentWindow !== e.source) continue;
+          var h = Math.ceil(d.height);
+          if (!(h > 0)) return;
+          if (h < 200) h = 200;
+          if (h > 6000) h = 6000;
+          frames[i].style.height = h + 'px';
+          return;
+        }
+      });
+    })();
+    </script>
+  </div>
+</section>
 </main>
 <footer class="footer reveal">
   <div class="footer-inner">
