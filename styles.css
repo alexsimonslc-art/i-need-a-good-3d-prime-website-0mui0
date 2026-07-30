@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A.Culturals&#39;26</title>
+<meta name="description" content="A.Culturals&#39;26 — details, schedule and registration.">
+<meta name="theme-color" content="#ff6a3d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ff6a3d%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23c026d3%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A.Culturals&#39;26">
+<meta property="og:title" content="A.Culturals&#39;26">
+<meta property="og:description" content="A.Culturals&#39;26 — details, schedule and registration.">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="A.Culturals&#39;26">
+<meta name="twitter:description" content="A.Culturals&#39;26 — details, schedule and registration.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" data-nav>
+  <a class="nav-brand" href="index.html">A.Culturals&#39;26</a>
+  <nav class="nav-links"><a href="index.html">Home</a><a href="pages/register.html">Register</a></nav>
+  <button class="nav-burger" aria-label="Menu" data-burger><span></span><span></span><span></span></button>
+</header>
+<main>
+<div class="scene-pin" style="--pin:1.5">
+<section class="hero fx-meteors sc-hold sc-zoom sc-depth" data-hero data-media data-sparkles data-scene data-pin>
+<div class="ms-media ms-g-brand" data-ms-video>
+    <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-03.webp" alt="" aria-hidden="true" decoding="async">
+    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
+      data-mp4="https://motion.galsol.in/v1/stage-lights-03.mp4"></video>
+  </div>
+  <div class="ms-scrim ms-scrim-heavy"></div>
+  <div class="hero-bg" data-bg></div>
+  <div class="hero-inner">
+    <span class="hero-badge reveal">LOYOLA COLLEGE • DEC 25, 2026</span>
+    <h1 class="hero-title reveal txt-gradient">A.Culturals&#39;26</h1>
+    <p class="hero-sub reveal">Chennai&#39;s ultimate inter-collegiate cultural warzone returns. Bring the energy, claim the crown.</p>
+    <a class="btn btn-lg reveal btn-shine" href="pages/register.html">Secure Your Pass</a>
+  </div>
+</section>
+</div>
+<section class="section fx-noise sc-wipe sc-rise" id="about" data-media data-scene>
+<div class="ms-media ms-g-warm" data-ms-video>
+    <img class="ms-poster" src="https://motion.galsol.in/v1/ink-flow-02.webp" alt="" aria-hidden="true" decoding="async">
+    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
+      data-mp4="https://motion.galsol.in/v1/ink-flow-02.mp4"></video>
+  </div>
+  <div class="ms-scrim ms-scrim-medium"></div>
+  <div class="section-inner">
+    <div class="about-copy">
+      <h2 class="section-title reveal">The Legacy of Loyola</h2>
+      <p class="section-lead reveal">For decades, Loyola College has hosted the ultimate arena where raw student talent meets explosive performance energy. A.Culturals&#39;26 brings together over 50 top institutions from across India to battle in music, dance, visual arts, and design. Prepare for an unforgettable day of creative warfare under the Chennai sky.</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section" id="schedule" data-scene>
+  <div class="section-inner">
+    <h2 class="section-title reveal">The Mainstage Schedule</h2>
+    <div class="schedule">
+    <div class="sched-item reveal" data-glow>
+      <div class="sched-time">09:00 AM</div>
+      <div class="sched-body"><div class="sched-title">Battle of the Bands</div><div class="sched-desc">The heaviest live rock, fusion, and acoustic sets from Chennai&#39;s premier student musicians fighting for the grand prize.</div></div>
+    </div>
+    <div class="sched-item reveal" data-glow>
+      <div class="sched-time">12:00 PM</div>
+      <div class="sched-body"><div class="sched-title">Choreo Nite (Eastern &amp; Western)</div><div class="sched-desc">High-velocity synchronized routines and stunning street dances that light up the historic Loyola open-air theater.</div></div>
+    </div>
+    <div class="sched-item reveal" data-glow>
+      <div class="sched-time">03:00 PM</div>
+      <div class="sched-body"><div class="sched-title">Pro-Show &amp; Star Interactive</div><div class="sched-desc">Exclusive live performances and Q&amp;A sessions with the country&#39;s most celebrated cultural icons and cinematic stars.</div></div>
+    </div>
+    <div class="sched-item reveal" data-glow>
+      <div class="sched-time">06:00 PM</div>
+      <div class="sched-body"><div class="sched-title">The DJ War &amp; Mega Finale</div><div class="sched-desc">An explosive electronic dance music performance to crown the overall champion college of A.Culturals&#39;26.</div></div>
+    </div></div>
+  </div>
+</section>
+<section class="section" id="speakers" data-scene>
+  <div class="section-inner">
+    <h2 class="section-title reveal">Star Jury &amp; Special Guests</h2>
+    <div class="grid grid-cards">
+    <article class="card speaker reveal">
+      <div class="speaker-photo" style="background-image:url('https://lookaside.fbsbx.com/lookaside/crawler/instagram/DP2qDilD8aN/0/image.jpg')"></div>
+      <div class="speaker-name">Anirudh Ravichander</div>
+      <div class="speaker-role">Guest of Honor &amp; Chief Music Judge</div>
+    </article>
+    <article class="card speaker reveal">
+      <div class="speaker-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%28cropped%29.jpg')"></div>
+      <div class="speaker-name">Gautham Vasudev Menon</div>
+      <div class="speaker-role">Grand Finale Variety Show Judge</div>
+    </article>
+    <article class="card speaker reveal">
+      <div class="speaker-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/9/95/Sandy_Master_in_2019.jpg')"></div>
+      <div class="speaker-name">Sandy Master</div>
+      <div class="speaker-role">Choreography Battle Lead Arbiter</div>
+    </article></div>
+  </div>
+</section>
+<section class="section countdown-section" id="countdown">
+  <div class="section-inner">
+    <h2 class="section-title reveal">The Countdown to the Arena</h2>
+    <div class="countdown reveal" data-countdown="2026-12-25T08:00:00">
+      <div class="cd-unit"><span data-cd="days">00</span><small>Days</small></div>
+      <div class="cd-unit"><span data-cd="hours">00</span><small>Hours</small></div>
+      <div class="cd-unit"><span data-cd="mins">00</span><small>Minutes</small></div>
+      <div class="cd-unit"><span data-cd="secs">00</span><small>Seconds</small></div>
+    </div>
+  </div>
+</section>
+<section class="section sc-parallax sc-rise" id="gallery" data-scene>
+  <div class="section-inner">
+    <h2 class="section-title reveal">Relive the Glory</h2>
+    <div class="gallery"><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/5193526/pexels-photo-5193526.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/30215324/pexels-photo-30215324.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div><div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200')"></div></div>
+  </div>
+</section>
+<section class="section cta fx-meteors" id="register" data-media data-scene>
+<div class="ms-media ms-g-brand" data-ms-video>
+    <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-01.webp" alt="" aria-hidden="true" decoding="async">
+    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
+      data-mp4="https://motion.galsol.in/v1/stage-lights-01.mp4"></video>
+  </div>
+  <div class="ms-scrim ms-scrim-heavy"></div>
+  <div class="section-inner cta-inner reveal">
+    <h2 class="cta-title">Will You Defend Your College Pride?</h2>
+    <p class="cta-sub">Registration is free but slots are strictly capped per event category. Secure your contingent&#39;s place today.</p>
+    <a class="btn btn-lg btn-borderglow" href="pages/register.html">Register Now</a>
+  </div>
+</section>
+</main>
+<footer class="footer reveal">
+  <div class="footer-inner">
+    <div class="footer-brand">A.Culturals&#39;26</div>
+    <nav class="footer-links"><a href="index.html">Home</a><a href="pages/register.html">Register</a></nav>
+    <div class="footer-copy">© 2026 A.Culturals&#39;26. Made with GalSol.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
