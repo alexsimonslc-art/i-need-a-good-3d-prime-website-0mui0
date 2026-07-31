@@ -42,6 +42,13 @@
       // Scale from 2.8 (zoomed into center cell) to 1.0 (fully zoomed out)
       var scale = 2.8 - (progress * 1.8);
       gridWrap.style.transform = 'scale(' + scale + ')';
+      
+      // Fade out the hero content frame as we zoom out so it never crops or looks cluttered
+      var heroFrame = gridWrap.querySelector('.hero-frame');
+      if (heroFrame) {
+        heroFrame.style.opacity = Math.max(0, 1 - progress * 3);
+        heroFrame.style.transform = 'scale(' + (1 - progress * 0.15) + ')';
+      }
     }
     window.addEventListener('scroll', updateZoom, { passive: true });
     window.addEventListener('resize', updateZoom, { passive: true });
