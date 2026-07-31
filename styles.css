@@ -249,7 +249,23 @@ main { padding-top: 0; margin-top: 0; }
   z-index: 1;
 }
 
+/* The middle cell holds your hero section securely */
+.grid-cell.gc-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 10;
+  /* ADDED: Forces the center cell to never crop its contents */
+  overflow: visible; 
+}
 
+/* Let the hero content shrink naturally with the grid */
+.grid-cell.gc-mid > * {
+  /* REMOVED the expanding counter-scale that caused the cropping */
+  transform: none; 
+  width: 100%;
+}
 
 /* Fallback for mobile where the 3x3 layout becomes too tiny */
 @media (max-width: 760px) {
