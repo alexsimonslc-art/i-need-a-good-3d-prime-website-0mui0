@@ -115,10 +115,27 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 .gallery-item:hover{transform:scale(1.03)}
 
 /* cta */
-.cta-inner{text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
-  padding:64px 32px;backdrop-filter:blur(18px);box-shadow:var(--shadow)}
-.cta-title{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:12px}
-.cta-sub{color:var(--muted);font-size:1.1rem;margin-bottom:28px}
+.cta-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:64px 48px;backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:1}
+.cta-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center}
+.cta-main{text-align:left}
+.cta-badge{display:inline-block;padding:6px 14px;font-size:0.75rem;letter-spacing:0.12em;font-weight:700;border-radius:999px;background:rgba(255, 106, 61, 0.15);border:1px solid rgba(255, 106, 61, 0.3);color:var(--accent);text-transform:uppercase;margin-bottom:20px}
+.cta-title{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:16px;line-height:1.1}
+.cta-sub{color:var(--muted);font-size:1.1rem;margin-bottom:32px;max-width:540px;line-height:1.6}
+.cta-actions{display:flex;gap:16px;flex-wrap:wrap}
+.cta-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cta-stat-item{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;backdrop-filter:blur(10px);transition:transform 0.25s var(--ease), border-color 0.25s}
+.cta-stat-item:hover{border-color:var(--accent);transform:translateY(-4px)}
+.stat-num{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;line-height:1;margin-bottom:4px}
+.stat-label{font-size:0.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em}
+
+@media (max-width:960px){
+  .cta-grid{grid-template-columns:1fr;gap:40px}
+  .cta-card{padding:40px 24px}
+  .cta-main{text-align:center}
+  .cta-sub{margin-inline:auto}
+  .cta-actions{justify-content:center}
+}
 
 /* form embed */
 .form-embed{max-width:720px;margin:40px auto 0}
