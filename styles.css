@@ -646,3 +646,45 @@ main {
 }
 @property --p{syntax:'<number>';inherits:true;initial-value:0}
 ...
+
+/* ── enhancement patch for A.Culturals'26 ──
+   Append this AFTER your existing style.css (rename to styles.css to match
+   the <link> in index.html, or merge these rules into it).
+   These are additive/overriding rules only — your original design system,
+   variables, and effects kit are untouched. */
+
+/* Fix: og/meta + hero image should never show a layout jump before video swaps in */
+.ms-media .ms-poster{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+
+/* Slightly stronger legibility on the hero frame text over busy footage */
+.hero-sub{ text-shadow:0 2px 18px rgba(0,0,0,.55); }
+.hero-tagline{ text-shadow:0 2px 14px rgba(0,0,0,.5); }
+
+/* Badge consistency: UPCOMING should not pulse like LIVE did */
+.meta-pillar .live-indicator{ animation:pulseIndicator 1.8s ease-in-out infinite; }
+
+/* Better tap targets on mobile nav links */
+@media (max-width:760px){
+  .nav-links a{ padding:16px 4px; font-size:1.05rem; }
+}
+
+/* Prevent gallery/grid images causing CLS before they load */
+.grid-cell img, .gallery-item{ background:var(--bg2); }
+
+/* Respect reduced-data users: hide decorative meteor layer entirely */
+@media (prefers-reduced-motion: reduce){
+  .fx-meteors .meteor{ display:none; }
+}
+
+/* Sharper focus states for keyboard users (accessibility) */
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  border-radius:8px;
+}
+
+/* Countdown unit sizing on very small screens */
+@media (max-width:420px){
+  .cd-unit{ min-width:78px; padding:16px 14px; }
+  .cd-unit span{ font-size:2rem; }
+}
