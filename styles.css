@@ -331,3 +331,18 @@ main { padding-top: 0; margin-top: 0; }
   [data-scene]{transform:none!important;filter:none!important;opacity:1!important;clip-path:none!important}
   .ms-media .ms-vid{display:none}
 }
+
+/* The middle cell holds your hero section securely */
+.grid-cell.gc-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 10;
+}
+
+/* Counter-scale the hero text so it stays legible while the grid shrinks */
+.grid-cell.gc-mid > * {
+  transform: scale(calc(1 + var(--p, 0) * 1.4));
+  transform-origin: 50% 50%;
+}
