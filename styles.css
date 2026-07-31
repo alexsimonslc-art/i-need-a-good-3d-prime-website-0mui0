@@ -286,3 +286,5 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
   [data-scene] .hero-inner,[data-scene] .section-inner{transform:none!important;opacity:1!important}
   [data-scene] .ms-media{transform:none!important}
 }
+@property --p{syntax:'<number>';inherits:true;initial-value:0}
+...
