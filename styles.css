@@ -1,253 +1,381 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>A.Culturals'26</title>
-<meta name="description" content="A.Culturals'26 — details, schedule and registration.">
-<meta name="theme-color" content="#d4ff00">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23d4ff00%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23ff0055%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22%23000%22%20text-anchor%3D%22middle%22%3EA%3C%2Ftext%3E%3C%2Fsvg%3E">
+:root{
+  --bg:#07080d;--bg2:#0d0e14;--surface:rgba(18,22,32,.55);--border:rgba(255,255,255,.09);
+  --text:#f0f3ff;--muted:#94a3b8;
+  --accent:#d4ff00;--accent2:#ff0055;--on-accent:#000000;
+  --grad:linear-gradient(135deg,var(--accent),var(--accent2));
+  --scheme:dark;
+  --font-display:'Syne', sans-serif;--font-body:'Inter', system-ui, sans-serif;
+  --radius:20px;--radius-sm:12px;--radius-lg:32px;
+  --shadow:0 24px 68px rgba(0,0,0,.6);
+  --shadow-sm:0 8px 32px rgba(0,0,0,.45);
+  --maxw:1180px;--ease:cubic-bezier(.22,1,.36,1);
+}
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.Culturals'26">
-<meta property="og:title" content="A.Culturals'26">
-<meta property="og:description" content="A.Culturals'26 — details, schedule and registration.">
-<meta property="og:image" content="https://motion.galsol.in/v1/stage-lights-03.webp">
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{color-scheme:var(--scheme)}
+*{scrollbar-width:thin;scrollbar-color:var(--accent) transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--accent),var(--accent2));border-radius:20px;border:2px solid transparent;background-clip:padding-box}
+::-webkit-scrollbar-thumb:hover{filter:brightness(1.15)}
+::-webkit-scrollbar-corner{background:transparent}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin:0}
+.section-inner,.hero-inner,.footer-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A.Culturals'26">
-<meta name="twitter:description" content="A.Culturals'26 — details, schedule and registration.">
-<meta name="twitter:image" content="https://motion.galsol.in/v1/stage-lights-03.webp">
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:var(--on-accent);font-weight:700;
+  padding:13px 26px;border-radius:999px;box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 35%,transparent);
+  transition:transform .2s var(--ease),filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.btn-lg{padding:16px 34px;font-size:1.05rem}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://motion.galsol.in">
-<link rel="preconnect" href="https://images.pexels.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://motion.galsol.in/v1/stage-lights-03.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="nav" data-nav data-nav-spotlight>
-  <a class="nav-brand" href="index.html">A.Culturals'26</a>
-  <nav class="nav-links"><a href="index.html" class="active">Home</a><a href="pages/about.html">About</a><a href="pages/register.html">Register</a></nav>
-  <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
-</header>
-<main>
-<div class="scene-pin">
-<section class="grid-scene" data-scene data-pin aria-label="A.Culturals'26 highlights">
-  <div class="grid-wrap">
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/5193526/pexels-photo-5193526.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Cultural performance art" loading="lazy" decoding="async">
-    </div>
-    <div class="grid-cell gc-out" data-ms-video>
-      <img class="ms-poster" src="https://motion.galsol.in/v1/ink-flow-02.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true" data-mp4="https://motion.galsol.in/v1/ink-flow-02.mp4"></video>
-    </div>
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Excited collegiate concert crowd" loading="lazy" decoding="async">
-    </div>
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Live instrument stage performance" loading="lazy" decoding="async">
-    </div>
-    <div class="grid-cell gc-mid" data-clickspark data-spotlight>
-      <div class="hero" data-lightfall style="width:100%;height:100%;display:flex;align-items:center;position:relative;overflow:hidden">
-        <div class="ms-media ms-g-brand" data-ms-video>
-          <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-03.webp" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
-          <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-            data-mp4="https://motion.galsol.in/v1/stage-lights-03.mp4"></video>
-        </div>
-        <div class="ms-scrim ms-scrim-heavy"></div>
-        <div class="hero-inner" style="width:100%">
-          <div class="hero-frame reveal">
-            <div class="hero-corner hc-tl"></div>
-            <div class="hero-corner hc-tr"></div>
-            <div class="hero-corner hc-bl"></div>
-            <div class="hero-corner hc-br"></div>
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:14px 24px;background:color-mix(in srgb,var(--bg) 62%,transparent);backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--border)}
+.nav-brand{font-family:var(--font-display);font-weight:700;font-size:1.25rem}
+.nav-links{display:flex;gap:26px}
+.nav-links a{color:var(--muted);font-weight:600;font-size:.95rem;transition:color .15s}
+.nav-links a:hover{color:var(--text)}
+.nav-burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.nav-burger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:.25s}
 
-            <div class="hero-meta-badge">
-              <span class="meta-pillar"><span class="live-indicator"></span>UPCOMING</span>
-              <span class="meta-divider"></span>
-              <span class="meta-date">DEC 25, 2026</span>
-              <span class="meta-divider"></span>
-              <span class="meta-location">CHENNAI</span>
-            </div>
+/* hero inner contents */
+.hero{position:relative;min-height:100%;display:flex;align-items:center;overflow:hidden; width: 100%;}
+.hero-inner{position:relative;z-index:2;text-align:center;padding-top:80px;padding-bottom:40px;width:100%}
 
-            <div class="hero-college-tag">LOYOLA COLLEGE INTER-COLLEGIATE ARENA</div>
+/* Premium Cyber Frame & Tickers */
+.hero-frame {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 36px;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(212, 255, 0, 0.12) 0%, rgba(255, 0, 85, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.hero-frame::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+.hero-corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--accent);
+  opacity: 0.8;
+  transition: transform 0.3s var(--ease);
+}
+.hero-frame:hover .hero-corner { transform: scale(1.1); }
+.hc-tl { top: 16px; left: 16px; border-right: 0; border-bottom: 0; }
+.hc-tr { top: 16px; right: 16px; border-left: 0; border-bottom: 0; border-color: var(--accent2); }
+.hc-bl { bottom: 16px; left: 16px; border-right: 0; border-top: 0; border-color: var(--accent2); }
+.hc-br { bottom: 16px; right: 16px; border-left: 0; border-top: 0; }
 
-            <h1 class="hero-title txt-gradient txt-shiny">A.Culturals'26</h1>
+.hero-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.meta-pillar { display: flex; align-items: center; gap: 6px; color: var(--accent); }
+.live-indicator { width: 8px; height: 8px; background: #39ff14; border-radius: 50%; box-shadow: 0 0 10px #39ff14; animation: pulseIndicator 1.5s infinite; }
+@keyframes pulseIndicator { 0% { transform: scale(0.9); opacity: 0.7; } 50% { transform: scale(1.3); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.7; } }
+.meta-divider { width: 1px; height: 12px; background: rgba(255, 255, 255, 0.15); }
+.meta-date { color: var(--text); }
+.meta-location { color: var(--accent2); }
 
-            <div class="hero-tagline">
-              THE ULTIMATE ARENA OF <span class="txt-glow">ARTISTIC WARFARE</span>
-            </div>
+.hero-college-tag { font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.2em; font-weight: 800; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
+.hero-title { font-size: clamp(3.5rem, 9vw, 6.5rem); letter-spacing: -0.02em; margin-bottom: 16px; max-width: 16ch; margin-inline: auto; text-shadow: 0 0 60px rgba(212, 255, 0, 0.35); line-height: 1.1; }
+.hero-tagline { font-family: var(--font-display); font-size: clamp(1.2rem, 3.2vw, 2.1rem); font-weight: 800; letter-spacing: 0.06em; color: var(--text); margin-bottom: 24px; text-transform: uppercase; }
+.hero-tagline .txt-glow { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 20px rgba(157, 0, 255, 0.3); }
+.hero-sub { font-size: clamp(1rem, 1.8vw, 1.15rem); color: var(--muted); max-width: 58ch; margin: 0 auto 32px; line-height: 1.6; }
+.hero-actions { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 
-            <p class="hero-sub">Chennai's ultimate collegiate cultural warzone returns. Bring the energy, claim the crown, and build your legacy under the main stage lights.</p>
+.btn-premium { background: var(--grad); color: var(--on-accent); border: none; font-weight: 800; display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; border-radius: 999px; box-shadow: 0 12px 35px rgba(212, 255, 0, 0.25); transition: all 0.3s var(--ease); }
+.btn-premium:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 16px 45px rgba(212, 255, 0, 0.4); }
+.btn-arrow { width: 18px; height: 18px; transition: transform 0.3s var(--ease); }
+.btn-premium:hover .btn-arrow { transform: translateX(4px); }
+.btn-explore { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); color: var(--text); font-weight: 700; padding: 16px 36px; border-radius: 999px; transition: all 0.3s var(--ease); backdrop-filter: blur(10px); }
+.btn-explore:hover { background: rgba(255, 255, 255, 0.1); border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(212, 255, 0, 0.15); }
 
-            <div class="hero-actions">
-              <a class="btn btn-lg btn-shine btn-premium" href="pages/register.html" data-magnetic>
-                <span>Secure VIP Pass</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true" style="width:18px;height:18px;"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-              </a>
-              <a class="btn btn-lg btn-explore" href="#about" data-magnetic>Explore the Arena</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/30215324/pexels-photo-30215324.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Choreographed dance crew on stage" loading="lazy" decoding="async">
-    </div>
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Rock band live performance" loading="lazy" decoding="async">
-    </div>
-    <div class="grid-cell gc-out" data-ms-video>
-      <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-01.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
-      <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true" data-mp4="https://motion.galsol.in/v1/stage-lights-01.mp4"></video>
-    </div>
-    <div class="grid-cell gc-out">
-      <img src="https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Explosive festival lights and colors" loading="lazy" decoding="async">
-    </div>
-  </div>
-</section>
-</div>
+@media(max-width: 640px) {
+  .hero-frame { padding: 40px 20px; border-radius: var(--radius); }
+  .hero-corner { width: 12px; height: 12px; }
+  .hc-tl { top: 12px; left: 12px; } .hc-tr { top: 12px; right: 12px; } .hc-bl { bottom: 12px; left: 12px; } .hc-br { bottom: 12px; right: 12px; }
+}
 
-<section class="section fx-noise sc-wipe sc-rise" id="about" data-media data-scene>
-<div class="ms-media ms-g-warm" data-ms-video>
-    <img class="ms-poster" src="https://motion.galsol.in/v1/ink-flow-02.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
-    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-      data-mp4="https://motion.galsol.in/v1/ink-flow-02.mp4"></video>
-  </div>
-  <div class="ms-scrim ms-scrim-medium"></div>
-  <div class="section-inner">
-    <div class="about-copy">
-      <h2 class="section-title reveal">The Legacy of Loyola</h2>
-      <p class="section-lead reveal">For decades, Loyola College has hosted the ultimate arena where raw student talent meets explosive performance energy. A.Culturals'26 brings together over 50 top institutions from across India to battle in music, dance, visual arts, and design. Prepare for an unforgettable day of creative warfare under the Chennai sky.</p>
-    </div>
-  </div>
-</section>
+/* sections */
+.section{padding:96px 0;position:relative}
+.section-title{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.02em;margin-bottom:14px;text-align:center}
+.section-lead{color:var(--muted);font-size:1.15rem;max-width:60ch;margin:0 auto;text-align:center}
 
-<section class="section" id="schedule" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">The Mainstage Schedule</h2>
-    <div class="schedule">
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">09:00 AM</div>
-      <div class="sched-body"><div class="sched-title">Battle of the Bands</div><div class="sched-desc">The heaviest live rock, fusion, and acoustic sets from Chennai's premier student musicians fighting for the grand prize.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">12:00 PM</div>
-      <div class="sched-body"><div class="sched-title">Choreo Nite (Eastern & Western)</div><div class="sched-desc">High-velocity synchronized routines and stunning street dances that light up the historic Loyola open-air theater.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">03:00 PM</div>
-      <div class="sched-body"><div class="sched-title">Pro-Show & Star Interactive</div><div class="sched-desc">Exclusive live performances and Q&A sessions with the country's most celebrated cultural icons and cinematic stars.</div></div>
-    </div>
-    <div class="sched-item reveal" data-glow>
-      <div class="sched-time">06:00 PM</div>
-      <div class="sched-body"><div class="sched-title">The DJ War & Mega Finale</div><div class="sched-desc">An explosive electronic dance music performance to crown the overall champion college of A.Culturals'26.</div></div>
-    </div></div>
-  </div>
-</section>
+/* glass cards + grids */
+.grid{display:grid;gap:22px;margin-top:44px}
+.grid-cards{grid-template-columns:repeat(auto-fit,minmax(230px,320px));justify-content:center}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px; backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);box-shadow:var(--shadow-sm); transition:transform .25s var(--ease),border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 55%,var(--border))}
+.speaker{text-align:center}
+.speaker-photo{width:110px;height:110px;border-radius:50%;margin:0 auto 16px;object-fit:cover;display:block;background:var(--surface);border:2px solid rgba(255,255,255,0.15);transition:border-color 0.3s var(--ease)}
+.card:hover .speaker-photo{border-color:var(--accent)}
+.speaker-name{font-weight:700;font-size:1.1rem}
+.speaker-role{color:var(--muted);font-size:.9rem;margin-top:3px}
 
-<section class="section" id="speakers" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">Star Jury & Special Guests</h2>
-    <div class="grid grid-cards">
-    <article class="card speaker reveal">
-      <img class="speaker-photo" src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/d/d4/Anirudh_Ravichander_at_Audi_Ritz_Style_Awards_2017_%28cropped%29.jpg&w=300&h=300&fit=cover" alt="Anirudh Ravichander" loading="lazy">
-      <div class="speaker-name">Anirudh Ravichander</div>
-      <div class="speaker-role">Guest of Honor & Chief Music Judge</div>
-    </article>
-    <article class="card speaker reveal">
-      <img class="speaker-photo" src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/1/1e/Gautham_Menon_at_Dhuruvangal_Pathinaaru_Success_Meet_%2528cropped%2529.jpg&w=300&h=300&fit=cover" alt="Gautham Vasudev Menon" loading="lazy">
-      <div class="speaker-name">Gautham Vasudev Menon</div>
-      <div class="speaker-role">Grand Finale Variety Show Judge</div>
-    </article>
-    <article class="card speaker reveal">
-      <img class="speaker-photo" src="https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/9/95/Sandy_Master_in_2019.jpg&w=300&h=300&fit=cover" alt="Sandy Master" loading="lazy">
-      <div class="speaker-name">Sandy Master</div>
-      <div class="speaker-role">Choreography Battle Lead Arbiter</div>
-    </article></div>
-  </div>
-</section>
+/* schedule */
+.schedule{max-width:760px;margin:44px auto 0;display:flex;flex-direction:column;gap:14px}
+.sched-item{display:flex;gap:20px;align-items:flex-start;background:var(--surface);border:1px solid var(--border); border-radius:var(--radius);padding:20px 22px;backdrop-filter:blur(14px)}
+.sched-time{font-family:var(--font-display);font-weight:700;color:var(--accent);min-width:92px}
+.sched-title{font-weight:700}
+.sched-desc{color:var(--muted);font-size:.95rem;margin-top:3px}
 
-<section class="section countdown-section" id="countdown">
-  <div class="section-inner">
-    <h2 class="section-title reveal">The Countdown to the Arena</h2>
-    <div class="countdown reveal" data-countdown="2026-12-25T08:00:00+05:30">
-      <div class="cd-unit"><span data-cd="days">00</span><small>Days</small></div>
-      <div class="cd-unit"><span data-cd="hours">00</span><small>Hours</small></div>
-      <div class="cd-unit"><span data-cd="mins">00</span><small>Minutes</small></div>
-      <div class="cd-unit"><span data-cd="secs">00</span><small>Seconds</small></div>
-    </div>
-  </div>
-</section>
+/* countdown */
+.countdown{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:40px}
+.cd-unit{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px; min-width:104px;text-align:center;backdrop-filter:blur(14px)}
+.cd-unit span{display:block;font-family:var(--font-display);font-size:2.6rem;font-weight:700;line-height:1; background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cd-unit small{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
 
-<section class="section sc-parallax sc-rise" id="gallery" data-scene>
-  <div class="section-inner">
-    <h2 class="section-title reveal">Relive the Glory</h2>
-    <div class="gallery">
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/5193526/pexels-photo-5193526.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Cultural performance art"></div>
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/4218027/pexels-photo-4218027.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Concert crowd"></div>
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Stage performance"></div>
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/30215324/pexels-photo-30215324.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Dance crew"></div>
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/7081216/pexels-photo-7081216.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Band performance"></div>
-      <div class="gallery-item reveal" style="background-image:url('https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')" role="img" aria-label="Festival lights"></div>
-    </div>
-  </div>
-</section>
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:44px}
+.gallery-item{aspect-ratio:4/3;border-radius:var(--radius-sm);background-size:cover;background-position:center; background-color:var(--surface);border:1px solid var(--border);transition:transform .25s}
+.gallery-item:hover{transform:scale(1.03)}
 
-<section class="section cta fx-meteors" id="register" data-media data-scene>
-  <div class="ms-media ms-g-brand" data-ms-video>
-    <img class="ms-poster" src="https://motion.galsol.in/v1/stage-lights-01.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
-    <video class="ms-vid" muted playsinline loop preload="none" tabindex="-1" aria-hidden="true"
-      data-mp4="https://motion.galsol.in/v1/stage-lights-01.mp4"></video>
-  </div>
-  <div class="ms-scrim ms-scrim-heavy"></div>
-  <div class="section-inner">
-    <div class="cta-card reveal" data-glow data-spotlight>
-      <div class="cta-grid">
-        <div class="cta-main">
-          <span class="cta-badge">STRICTLY CAPPED REGISTRATIONS</span>
-          <h2 class="cta-title">Defend Your <span class="txt-gradient txt-shiny">College Pride</span></h2>
-          <p class="cta-sub">Over 50+ top tier institutions are locking in their contingents. Bring the energy, claim the crown, and engrave your college name into Chennai's cultural folklore.</p>
-          <div class="cta-actions">
-            <a class="btn btn-lg btn-shine" href="pages/register.html" data-magnetic>Secure Pass Now</a>
-            <a class="btn btn-lg btn-cyber-outline" href="pages/about.html" data-magnetic>Explore Legacy</a>
-          </div>
-        </div>
-        <div class="cta-stats">
-          <div class="cta-stat-item" data-tilt data-glow>
-            <div class="stat-num txt-gradient">50+</div>
-            <div class="stat-label">Colleges Battling</div>
-          </div>
-          <div class="cta-stat-item" data-tilt data-glow>
-            <div class="stat-num txt-gradient">&#8377;2.5L</div>
-            <div class="stat-label">Prize Pool</div>
-          </div>
-          <div class="cta-stat-item" data-tilt data-glow>
-            <div class="stat-num txt-gradient">15+</div>
-            <div class="stat-label">Major Events</div>
-          </div>
-          <div class="cta-stat-item" data-tilt data-glow>
-            <div class="stat-num txt-gradient">20K+</div>
-            <div class="stat-label">Expected Crowd</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+/* cta */
+.cta-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg); padding:64px 48px;backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);box-shadow:var(--shadow);overflow:hidden;position:relative;z-index:1}
+.cta-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center}
+.cta-main{text-align:left}
+.cta-badge{display:inline-block;padding:6px 14px;font-size:0.75rem;letter-spacing:0.12em;font-weight:700;border-radius:999px;background:rgba(255, 0, 85, 0.15);border:1px solid rgba(255, 0, 85, 0.3);color:var(--accent);text-transform:uppercase;margin-bottom:20px}
+.cta-title{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:16px;line-height:1.1}
+.cta-sub{color:var(--muted);font-size:1.1rem;margin-bottom:32px;max-width:540px;line-height:1.6}
+.cta-actions{display:flex;gap:16px;flex-wrap:wrap}
+.cta-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cta-stat-item{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center;backdrop-filter:blur(10px);transition:transform 0.25s var(--ease), border-color 0.25s}
+.cta-stat-item:hover{border-color:var(--accent);transform:translateY(-4px)}
+.stat-num{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:800;line-height:1;margin-bottom:4px}
+.stat-label{font-size:0.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em}
+@media (max-width:960px){ .cta-grid{grid-template-columns:1fr;gap:40px} .cta-card{padding:40px 24px} .cta-main{text-align:center} .cta-sub{margin-inline:auto} .cta-actions{justify-content:center} }
 
-<footer class="footer reveal">
-  <div class="footer-inner">
-    <div class="footer-brand">A.Culturals'26</div>
-    <nav class="footer-links"><a href="index.html">Home</a><a href="pages/register.html">Register</a></nav>
-    <div class="footer-copy">&copy; 2026 A.Culturals'26. Made with GalSol.</div>
-  </div>
-</footer>
+/* footer */
+.footer{border-top:1px solid var(--border);padding:56px 24px;background:var(--bg2)}
+.footer-inner{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.footer-brand{font-family:var(--font-display);font-weight:700;font-size:1.3rem}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:var(--muted);font-weight:600;transition:color .15s}
+.footer-links a:hover{color:var(--text)}
+.footer-copy{color:var(--muted);font-size:.85rem}
 
-<script src="script.js" defer></script>
-</body>
-</html>
+/* scroll-reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* ========================================================================= */
+/* FIX: UNIFIED HERO GRID ZOOM (The magic that makes the pull-back work)     */
+/* ========================================================================= */
+main { padding-top: 0; margin-top: 0; }
+
+.scene-pin {
+  position: relative;
+  height: 200vh;
+}
+
+.grid-scene {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.grid-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 300vw ensures the middle cell is exactly 100vw wide at scale(1) */
+  width: 300vw;
+  height: 300vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  /* At scroll start (p=0), scale is 1. At end (p=1), scale shrinks to reveal the grid */
+  transform: translate(-50%, -50%) scale(calc(1 - var(--p, 0) * 0.6667));
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+@media (min-width: 769px) {
+  .grid-wrap { gap: 24px; }
+}
+
+.grid-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--bg2);
+  height: 100%;
+}
+
+.grid-cell img, .grid-cell video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Outer cells start invisible and fade in as you scroll */
+.grid-cell.gc-out {
+  opacity: calc(var(--p, 0) * 3.2);
+  z-index: 1;
+}
+
+/* The middle cell holds your hero section securely */
+.grid-cell.gc-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 10;
+  /* ADDED: Forces the center cell to never crop its contents */
+  overflow: visible; 
+}
+
+/* Let the hero content shrink naturally with the grid */
+.grid-cell.gc-mid > * {
+  /* REMOVED the expanding counter-scale that caused the cropping */
+  transform: none; 
+  width: 100%;
+}
+
+/* Fallback for mobile where the 3x3 layout becomes too tiny */
+@media (max-width: 760px) {
+  .grid-wrap {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-cell.gc-mid { min-height: 85svh; }
+  .grid-cell.gc-out { opacity: 1; height: 35vh; }
+  .grid-cell.gc-mid > * { transform: none !important; }
+}
+
+/* ── effects kit ── */
+.txt-gradient{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn-shine{position:relative;overflow:hidden}.btn-shine::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.4),transparent 70%);transform:translateX(-130%);transition:transform .7s var(--ease)}.btn-shine:hover::after{transform:translateX(130%)}
+.btn-cyber-outline { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.02); color: var(--text); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; position: relative; overflow: hidden; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.02); transition: all 0.4s var(--ease); font-weight: 700; }
+.btn-cyber-outline::before { content: ''; position: absolute; top: 0; left: 15%; width: 70%; height: 1.5px; background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent); transition: all 0.4s var(--ease); }
+.btn-cyber-outline::after { content: ''; position: absolute; bottom: 0; left: 15%; width: 70%; height: 1.5px; background: linear-gradient(90deg, transparent, var(--accent2), var(--accent), transparent); transition: all 0.4s var(--ease); }
+.btn-cyber-outline:hover { border-color: rgba(255, 106, 61, 0.4); background: rgba(255, 106, 61, 0.08); box-shadow: 0 0 35px rgba(255, 106, 61, 0.22), inset 0 0 12px rgba(255, 106, 61, 0.12); transform: translateY(-3px); color: #fff; }
+.btn-cyber-outline:hover::before, .btn-cyber-outline:hover::after { width: 100%; left: 0; }
+[data-glow]{position:relative}[data-glow]::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:radial-gradient(200px circle at var(--gx,50%) var(--gy,50%),var(--accent),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}[data-glow]:hover::before{opacity:1}
+.fx-noise{position:relative}.fx-noise::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+[data-spotlight]{position:relative}[data-spotlight]::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(420px circle at var(--spx,50%) var(--spy,50%),color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%);opacity:0;transition:opacity .3s}[data-spotlight]:hover::after{opacity:1}[data-spotlight]>*{position:relative;z-index:1}
+.txt-shiny{background:linear-gradient(110deg,var(--muted) 40%,var(--text) 50%,var(--muted) 60%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:fxshine 3.2s linear infinite}@keyframes fxshine{to{background-position:-200% 0}}
+[data-nav-spotlight]{position:relative;overflow:hidden}[data-nav-spotlight]::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(110px circle at var(--nspx,-999px) 50%,color-mix(in srgb,var(--accent) 24%,transparent),transparent 70%);opacity:0;transition:opacity .3s}[data-nav-spotlight]:hover::before{opacity:1}[data-nav-spotlight] .nav-ind{position:absolute;bottom:0;height:2px;background:var(--grad);border-radius:2px;transition:left .35s var(--ease),width .35s var(--ease);pointer-events:none}
+/* Fix: Corrected Falling Lights (Meteors) Direction */
+.fx-meteors {
+  position: relative;
+  overflow: hidden;
+}
+
+.fx-meteors .meteor {
+  position: absolute;
+  top: -10%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px 2px var(--accent);
+  animation: fxmeteor 2.5s linear infinite;
+  z-index: 0;
+}
+
+/* The tail now properly anchors behind the head and fades out */
+.fx-meteors .meteor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0; 
+  transform: translateY(-50%);
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(270deg, transparent, var(--accent));
+}
+
+/* 135deg points exactly bottom-left. translateX moves it forward along that path */
+@keyframes fxmeteor {
+  0% {
+    transform: rotate(135deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(135deg) translateX(1200px);
+    opacity: 0;
+  }
+}
+
+/* media tier */
+[data-media]{position:relative;isolation:isolate;overflow:hidden}
+.ms-media{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.ms-media .ms-poster,.ms-media .ms-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ms-media .ms-vid{opacity:0;transition:opacity .6s var(--ease)}
+.ms-media .ms-vid.ms-on{opacity:1}
+.ms-g-warm .ms-poster,.ms-g-warm .ms-vid{filter:saturate(1.12) hue-rotate(10deg) brightness(1.02)}
+.ms-g-brand .ms-poster,.ms-g-brand .ms-vid{filter:grayscale(1) contrast(1.05)}
+.ms-g-brand::after{content:'';position:absolute;inset:0;background:var(--grad);mix-blend-mode:color;opacity:.85}
+.ms-scrim{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.ms-scrim-medium{background:linear-gradient(180deg,rgba(0,0,0,.34),rgba(0,0,0,.58))}
+.ms-scrim-heavy{background:linear-gradient(180deg,rgba(0,0,0,.52),rgba(0,0,0,.76))}
+
+/* scene layer */
+@property --p{syntax:'<number>';inherits:true;initial-value:0}
+@property --vp{syntax:'<number>';inherits:true;initial-value:1}
+[data-scene]{position:relative;will-change:transform,opacity,filter}
+.scene-pin>[data-pin]{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+[data-scene].sc-rise .hero-inner,[data-scene].sc-rise .section-inner{ transform:translateY(calc((1 - var(--vp,1))*46px));opacity:var(--vp,1)}
+[data-scene].sc-parallax .ms-media{transform:translateY(calc((var(--p,0) - .5)*13vh)) scale(1.16)}
+[data-scene].sc-wipe{clip-path:inset(calc((1 - var(--vp,1))*46%) 0 0 0)}
+
+@media (max-width:760px){
+  .nav-links{position:fixed;inset:58px 0 auto 0;flex-direction:column;gap:0;background:color-mix(in srgb,var(--bg) 94%,transparent); backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:10px 24px;transform:translateY(-140%);transition:transform .3s var(--ease)}
+  .nav.open .nav-links{transform:none}
+  .nav-links a{padding:14px 0;border-bottom:1px solid var(--border)}
+  .nav-burger{display:flex}
+  .nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav.open .nav-burger span:nth-child(2){opacity:0}
+  .nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .section{padding:64px 0}
+  .scene-pin>[data-pin]{position:static;height:auto;min-height:100svh}
+}
+@media (prefers-reduced-motion:reduce){
+  [data-scene]{transform:none!important;filter:none!important;opacity:1!important;clip-path:none!important}
+  .ms-media .ms-vid{display:none}
+}
+
