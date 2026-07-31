@@ -131,7 +131,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 
 /* glass cards + grids */
 .grid{display:grid;gap:22px;margin-top:44px}
-.grid-cards{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.grid-cards{grid-template-columns:repeat(auto-fit,minmax(230px,320px));justify-content:center}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px; backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);box-shadow:var(--shadow-sm); transition:transform .25s var(--ease),border-color .25s}
 .card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--accent) 55%,var(--border))}
 .speaker{text-align:center}
@@ -335,17 +335,3 @@ main { padding-top: 0; margin-top: 0; }
   .ms-media .ms-vid{display:none}
 }
 
-/* The middle cell holds your hero section securely */
-.grid-cell.gc-mid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  z-index: 10;
-}
-
-/* Counter-scale the hero text so it stays legible while the grid shrinks */
-.grid-cell.gc-mid > * {
-  transform: scale(calc(1 + var(--p, 0) * 1.4));
-  transform-origin: 50% 50%;
-}
