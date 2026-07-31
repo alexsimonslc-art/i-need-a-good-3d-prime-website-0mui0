@@ -39,8 +39,8 @@
       var progress = -rect.top / totalScroll;
       progress = Math.max(0, Math.min(1, progress));
       
-      // Scale from 2.8 (zoomed into center cell) to 1.0 (fully zoomed out)
-      var scale = 2.8 - (progress * 1.8);
+      // Scale from 3.0 (zoomed into center cell) to 1.0 (fully zoomed out)
+      var scale = 3.0 - (progress * 2.0);
       gridWrap.style.transform = 'scale(' + scale + ')';
       
       // Fade out the hero content frame as we zoom out so it never crops or looks cluttered

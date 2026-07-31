@@ -38,8 +38,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 .btn:hover{transform:translateY(-2px);filter:brightness(1.07)}
 .btn-lg{padding:16px 34px;font-size:1.05rem}
 
-/* nav — glassy sticky */
-.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;
+/* nav — glassy fixed */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:16px;
   padding:14px 24px;background:color-mix(in srgb,var(--bg) 62%,transparent);backdrop-filter:blur(16px) saturate(140%);
   -webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--border)}
 .nav-brand{font-family:var(--font-display);font-weight:700;font-size:1.25rem}
@@ -58,7 +58,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
     radial-gradient(40% 40% at 60% 90%,color-mix(in srgb,var(--accent) 45%,transparent),transparent);
   animation:heroFloat 16s var(--ease) infinite alternate}
 @keyframes heroFloat{to{transform:translate3d(3%,-3%,0) scale(1.1)}}
-.hero-inner{position:relative;z-index:2;text-align:center;padding-top:40px;padding-bottom:40px;width:100%}
+.hero-inner{position:relative;z-index:2;text-align:center;padding-top:80px;padding-bottom:40px;width:100%}
 
 /* Premium Cyber Frame & Tickers */
 .hero-frame {
@@ -350,7 +350,7 @@ main {
 
 .scene-pin {
   position: relative;
-  height: 180vh !important;
+  height: 200vh !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -358,7 +358,7 @@ main {
 .grid-scene {
   position: sticky !important;
   top: 0 !important;
-  height: 85vh !important;
+  height: 100vh !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -371,11 +371,17 @@ main {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
-  gap: 24px !important;
-  width: 100vw !important;
-  height: 85vh !important;
+  gap: 16px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100vh !important;
   transform-origin: center center !important;
   will-change: transform;
+}
+@media (min-width: 769px) {
+  .grid-wrap {
+    gap: 24px !important;
+  }
 }
 
 .grid-cell {
@@ -450,7 +456,7 @@ main {
 
 /* responsive */
 @media (max-width:760px){
-  .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;gap:0;background:color-mix(in srgb,var(--bg) 94%,transparent);
+  .nav-links{position:fixed;inset:58px 0 auto 0;flex-direction:column;gap:0;background:color-mix(in srgb,var(--bg) 94%,transparent);
     backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:10px 24px;transform:translateY(-140%);transition:transform .3s var(--ease)}
   .nav.open .nav-links{transform:none}
   .nav-links a{padding:14px 0;border-bottom:1px solid var(--border)}
