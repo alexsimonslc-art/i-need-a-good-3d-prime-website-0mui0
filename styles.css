@@ -295,50 +295,7 @@ main { padding-top: 0; margin-top: 0; }
 [data-spotlight]{position:relative}[data-spotlight]::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(420px circle at var(--spx,50%) var(--spy,50%),color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%);opacity:0;transition:opacity .3s}[data-spotlight]:hover::after{opacity:1}[data-spotlight]>*{position:relative;z-index:1}
 .txt-shiny{background:linear-gradient(110deg,var(--muted) 40%,var(--text) 50%,var(--muted) 60%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:fxshine 3.2s linear infinite}@keyframes fxshine{to{background-position:-200% 0}}
 [data-nav-spotlight]{position:relative;overflow:hidden}[data-nav-spotlight]::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(110px circle at var(--nspx,-999px) 50%,color-mix(in srgb,var(--accent) 24%,transparent),transparent 70%);opacity:0;transition:opacity .3s}[data-nav-spotlight]:hover::before{opacity:1}[data-nav-spotlight] .nav-ind{position:absolute;bottom:0;height:2px;background:var(--grad);border-radius:2px;transition:left .35s var(--ease),width .35s var(--ease);pointer-events:none}
-/* Fix: Corrected Falling Lights (Meteors) Direction */
-.fx-meteors {
-  position: relative;
-  overflow: hidden;
-}
-
-.fx-meteors .meteor {
-  position: absolute;
-  top: -10%;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 10px 2px var(--accent);
-  animation: fxmeteor 2.5s linear infinite;
-  z-index: 0;
-}
-
-/* The tail now properly anchors behind the head and fades out */
-.fx-meteors .meteor::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 0; 
-  transform: translateY(-50%);
-  width: 120px;
-  height: 1px;
-  background: linear-gradient(270deg, transparent, var(--accent));
-}
-
-/* 135deg points exactly bottom-left. translateX moves it forward along that path */
-@keyframes fxmeteor {
-  0% {
-    transform: rotate(135deg) translateX(0);
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(135deg) translateX(1200px);
-    opacity: 0;
-  }
-}
+.fx-meteors{position:relative;overflow:hidden}.fx-meteors .meteor{position:absolute;top:-8%;width:2px;height:2px;border-radius:50%;background:var(--accent);box-shadow:0 0 9px var(--accent);animation:fxmeteor linear infinite;z-index:0}.fx-meteors .meteor::after{content:'';position:absolute;top:50%;transform:translateY(-50%);width:90px;height:1px;background:linear-gradient(90deg,var(--accent),transparent)}@keyframes fxmeteor{0%{transform:translate(0,0) rotate(215deg);opacity:1}70%{opacity:1}100%{transform:translate(-760px,760px) rotate(215deg);opacity:0}}.fx-meteors>*:not(.meteor){position:relative;z-index:1}
 
 /* media tier */
 [data-media]{position:relative;isolation:isolate;overflow:hidden}
