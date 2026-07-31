@@ -342,6 +342,112 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero-bg{animation:none}}
 
+/* Hero Grid Zoom, Heights, Gaps & Corners */
+main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.scene-pin {
+  position: relative;
+  height: 180vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.grid-scene {
+  position: sticky !important;
+  top: 0 !important;
+  height: 85vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.grid-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-template-rows: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  width: 100vw !important;
+  height: 85vh !important;
+  transform-origin: center center !important;
+  will-change: transform;
+}
+
+.grid-cell {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: var(--radius) !important;
+  height: 100% !important;
+}
+
+.grid-cell img, .grid-cell video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: var(--radius) !important;
+}
+
+.grid-cell:not(.gc-mid) {
+  z-index: 1 !important;
+}
+
+.gc-mid {
+  z-index: 10 !important;
+}
+
+.gc-mid .hero {
+  height: 100% !important;
+}
+
+/* Force falling stars / meteors to go from left to right (top-left to bottom-right) */
+@keyframes meteor {
+  0% {
+    transform: translate(-100px, -100px) rotate(45deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translate(calc(100vw + 100px), calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes meteors {
+  0% {
+    transform: translate(-100px, -100px) rotate(45deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translate(calc(100vw + 100px), calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes falling-stars {
+  0% {
+    transform: translate(-100px, -100px) rotate(45deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translate(calc(100vw + 100px), calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.meteor, .star, [class*="meteor"], [class*="star"] {
+  animation-name: meteor !important;
+}
+
 /* responsive */
 @media (max-width:760px){
   .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;gap:0;background:color-mix(in srgb,var(--bg) 94%,transparent);

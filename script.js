@@ -27,6 +27,26 @@
     }
     tick();setInterval(tick,1000);
   });
+
+  // Smooth scroll zoom-out logic for grid-scene
+  var pinSection = document.querySelector('.scene-pin');
+  var gridWrap = document.querySelector('.grid-wrap');
+  if (pinSection && gridWrap) {
+    function updateZoom() {
+      var rect = pinSection.getBoundingClientRect();
+      var totalScroll = pinSection.offsetHeight - window.innerHeight;
+      if (totalScroll <= 0) totalScroll = 100;
+      var progress = -rect.top / totalScroll;
+      progress = Math.max(0, Math.min(1, progress));
+      
+      // Scale from 2.8 (zoomed into center cell) to 1.0 (fully zoomed out)
+      var scale = 2.8 - (progress * 1.8);
+      gridWrap.style.transform = 'scale(' + scale + ')';
+    }
+    window.addEventListener('scroll', updateZoom, { passive: true });
+    window.addEventListener('resize', updateZoom, { passive: true });
+    updateZoom();
+  }
 })();
 
 
