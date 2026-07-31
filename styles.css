@@ -175,6 +175,48 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 /* fx:data-flip */ [data-flip]>span{display:inline-block;transition:transform .5s var(--ease),opacity .5s;transform-origin:50% 100%}
 /* fx:btn-shine */ .btn-shine{position:relative;overflow:hidden}.btn-shine::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.4),transparent 70%);transform:translateX(-130%);transition:transform .7s var(--ease)}.btn-shine:hover::after{transform:translateX(130%)}
 /* fx:btn-borderglow */ .btn-borderglow{position:relative;z-index:0;background:var(--bg2);color:var(--text)}.btn-borderglow::before{content:'';position:absolute;inset:-2px;border-radius:inherit;background:conic-gradient(from 0deg,var(--accent),var(--accent2),var(--accent));z-index:-2;animation:fxspin 3.2s linear infinite}.btn-borderglow::after{content:'';position:absolute;inset:1.5px;border-radius:inherit;background:var(--bg2);z-index:-1}@keyframes fxspin{to{transform:rotate(360deg)}}
+/* fx:btn-cyber-outline */
+.btn-cyber-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.02);
+  transition: all 0.4s var(--ease);
+  font-weight: 700;
+}
+.btn-cyber-outline::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 15%; width: 70%; height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+  transition: all 0.4s var(--ease);
+}
+.btn-cyber-outline::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 15%; width: 70%; height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--accent2), var(--accent), transparent);
+  transition: all 0.4s var(--ease);
+}
+.btn-cyber-outline:hover {
+  border-color: rgba(255, 106, 61, 0.4);
+  background: rgba(255, 106, 61, 0.08);
+  box-shadow: 0 0 35px rgba(255, 106, 61, 0.22), inset 0 0 12px rgba(255, 106, 61, 0.12);
+  transform: translateY(-3px);
+  color: #fff;
+}
+.btn-cyber-outline:hover::before, .btn-cyber-outline:hover::after {
+  width: 100%;
+  left: 0;
+}
 /* fx:data-glow */ [data-glow]{position:relative}[data-glow]::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:radial-gradient(200px circle at var(--gx,50%) var(--gy,50%),var(--accent),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}[data-glow]:hover::before{opacity:1}
 /* fx:fx-aurora */ .fx-aurora{position:relative;overflow:hidden}.fx-aurora::before{content:'';position:absolute;inset:-30%;z-index:0;filter:blur(70px);opacity:.7;background:radial-gradient(35% 35% at 25% 30%,var(--accent),transparent),radial-gradient(35% 35% at 75% 35%,var(--accent2),transparent),radial-gradient(40% 40% at 55% 85%,var(--accent),transparent);animation:fxfloat 18s var(--ease) infinite alternate}.fx-aurora>*{position:relative;z-index:1}@keyframes fxfloat{to{transform:translate(4%,-4%) scale(1.15)}}
 /* fx:fx-dotgrid */ .fx-dotgrid{position:relative}.fx-dotgrid::before{content:'';position:absolute;inset:0;z-index:0;background-image:radial-gradient(circle,color-mix(in srgb,var(--text) 16%,transparent) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:radial-gradient(65% 55% at 50% 40%,#000,transparent);mask-image:radial-gradient(65% 55% at 50% 40%,#000,transparent)}.fx-dotgrid>*{position:relative;z-index:1}
