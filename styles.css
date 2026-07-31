@@ -50,7 +50,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
 .nav-burger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:.25s}
 
 /* hero — full viewport, gradient-mesh background, cinematic type */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
+.hero{position:relative;min-height:80vh;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:-20%;z-index:0;filter:blur(60px);opacity:.85;
   background:
     radial-gradient(40% 40% at 20% 25%,color-mix(in srgb,var(--accent) 70%,transparent),transparent),
@@ -65,7 +65,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
   position: relative;
   max-width: 860px;
   margin: 0 auto;
-  padding: 56px 40px;
+  padding: 32px 36px;
   background: radial-gradient(120% 120% at 50% 0%, rgba(0, 245, 255, 0.15) 0%, rgba(157, 0, 255, 0.04) 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
@@ -109,7 +109,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 8px 18px;
   border-radius: 999px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .meta-pillar {
@@ -183,7 +183,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;margin
   font-size: clamp(0.95rem, 1.8vw, 1.15rem);
   color: var(--muted);
   max-width: 58ch;
-  margin: 0 auto 36px;
+  margin: 0 auto 24px;
   line-height: 1.6;
 }
 
